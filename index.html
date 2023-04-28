@@ -10,7 +10,37 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../bootstrap-css/bootstrap.css">
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" type="image/png" href="./img/cc-logo.png">
   <title>Code Crusaders | Game Developer Company</title>
+
+  <style>
+    
+    @media only screen and (min-width: 775px) {
+
+      .carousel-inner{
+      height: 700px;
+      }
+
+      .item, 
+      .active image {
+      height: 50%;
+      width:  50%;
+      }
+
+      .team-pic {
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .accordion-body {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 10px;
+    }
+
+    }
+
+  </style>
 
 </head>
 <body>  
@@ -19,7 +49,7 @@
   <header>
 
       <div class="logo-container">
-        <a href="main.html">
+        <a href="./index.html">
           <img src="../img/cc-logo.png">
         </a>
       </div>
@@ -47,12 +77,12 @@
 
         <div>
           <button style="white-space: nowrap;">
-            <a href="console-games.html">Console Games</a>  
+            <a href="./pages/console-games.html">Console Games</a>  
           </button>
           <button style="white-space: nowrap;">
-            <a href="pc-games.html">PC Games</a></button>
+            <a href="./pages/pc-games.html">PC Games</a></button>
           <button style="white-space: nowrap;">
-           <a href="mobile-games.html">Mobile Games</a></button>
+           <a href="./pages/mobile-games.html">Mobile Games</a></button>
         </div>
 
       </div>
@@ -110,10 +140,14 @@
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <img class="box-art" src="../img/ff7-art.jpg">
-              <h4>Final Fantasy VII Remake</h4>
-              <p>FINAL FANTASY VII REMAKE is a bold reimagining of the original FINAL FANTASY VII, originally released in 1997, developed under the guidance of the original key developers.
+              <div>
+                <img class="box-art" src="../img/ff7-art.jpg">
+              </div>
+              <div>
+                <h4>Final Fantasy VII Remake</h4>
+                 <p>FINAL FANTASY VII REMAKE is a bold reimagining of the original FINAL FANTASY VII, originally released in 1997, developed under the guidance of the original key developers.
                 This critically-acclaimed game, which mixes traditional command-based combat and real-time action, makes its Steam debut along with FF7R EPISODE INTERmission─a new story arc featuring Yuffie Kisaragi.</p>
+              </div>            
             </div>
           </div>
         </div>
@@ -126,9 +160,13 @@
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-            <img class="box-art" src="../img/the-witcher-3-art.jpg">
-            <h4>The Witcher 3: Wild Hunt</h4>
-            <p>You are Geralt of Rivia, mercenary monster slayer. Before you stands a war-torn, monster-infested continent you can explore at will. Your current contract? Tracking down Ciri — the Child of Prophecy, a living weapon that can alter the shape of the world.</p>
+              <div>
+                <img class="box-art" src="../img/the-witcher-3-art.jpg">
+              </div>              
+              <div>
+                <h4>The Witcher 3: Wild Hunt</h4>
+                <p>You are Geralt of Rivia, mercenary monster slayer. Before you stands a war-torn, monster-infested continent you can explore at will. Your current contract? Tracking down Ciri — the Child of Prophecy, a living weapon that can alter the shape of the world.</p>
+              </div> 
             </div>
           </div>
         </div>
@@ -141,10 +179,14 @@
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <img class="box-art" src="../img/re4-art.png">
-              <h4>Resident Evil 4 Remake</h4>
-              <p>Survival is just the beginning. Six years have passed since the biological disaster in Raccoon City. Leon S. Kennedy, one of the survivors, tracks the president's kidnapped daughter to a secluded European village, where there is something terribly wrong with the locals.
+              <div>
+                <img class="box-art" src="../img/re4-art.png">
+              </div>
+              <div>
+                <h4>Resident Evil 4 Remake</h4>
+                <p>Survival is just the beginning. Six years have passed since the biological disaster in Raccoon City. Leon S. Kennedy, one of the survivors, tracks the president's kidnapped daughter to a secluded European village, where there is something terribly wrong with the locals.
               </p> 
+              </div>            
             </div>
           </div>
         </div>
@@ -157,7 +199,7 @@
       <p>
       Code Crush is a video game studio that creates amazing games for various platforms, including mobile, tablet, and desktop. The studio was established in 2021 by a group of avid gamers who wanted to share their passion and vision with the world. Code Crush offers a wide range of games for different tastes and genres, from casual to hardcore, from puzzle to action, from sandbox to adventure. Code Crush uses the latest technology, artistic talent, and gameplay innovation to make games that are fun and immersive. Code Crush has a proven track record of delivering successful games that have received positive feedback and reviews from players and critics. Code Crush is always open to new challenges and collaborations to grow its business and audience. If you want to work with Code Crush or find out more about its games, please get in touch with us.
     </p>
-    <img src="../img/about-us-pic.jpg" alt="">
+    <img class="team-pic" src="../img/about-us-pic.jpg" alt="">
     </div>
 
   </main>
@@ -169,7 +211,7 @@
         <h5>CONTACT US</h5>
       </div>
       <div>
-        <a href="">biz@codecrush.com</a>
+        <a href="#contact-us">biz@codecrush.com</a>
       </div>
       <div>
         0955 478 8352
@@ -199,13 +241,13 @@
         <h5>GAMES</h5>
       </div>
       <div>
-        <a href="mobile-games.html">Mobile Games</a>
+        <a href="./pages/mobile-games.html">Mobile Games</a>
       </div>
       <div>
-        <a href="pc-games.html">PC Games</a>
+        <a href="./pages/pc-games.html">PC Games</a>
       </div>
       <div>
-        <a href="console-games.html">Console Games</a>
+        <a href="./pages/console-games.html">Console Games</a>
       </div>
     </div>
 
@@ -214,10 +256,10 @@
         <h5>OTHERS</h5>
       </div>
       <div>
-        <a href="career.html">Career</a>
+        <a href="./pages/career.html">Career</a>
       </div>
       <div>
-        <a href="alpha-test-email.html">Register for alpha testing</a>
+        <a href="./pages/alpha-test-email.html">Register for alpha testing</a>
       </div>
     </div>
     
@@ -247,11 +289,11 @@
 
     <div class="middle-button-container">
         <button>
-          <a href="console-games.html">Console Games</a></button>
+          <a href="./pages/console-games.html">Console Games</a></button>
         <button>
-          <a href="pc-games.html">PC Games</a></button>
+          <a href="./pages/pc-games.html">PC Games</a></button>
         <button>
-          <a href="mobile-games.html">Mobile Games</a></button>
+          <a href="./pages/mobile-games.html">Mobile Games</a></button>
     </div>
 
     <div class="button-border">
